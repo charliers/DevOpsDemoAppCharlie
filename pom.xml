@@ -87,6 +87,7 @@
                          <tasks>
                              <echo>Movendo manifest.yml to target dir</echo>
                              <copy file="manifest.yml" tofile="${basedir}/target/manifest.yml"/>
+                             <copy file="${project.build.finalName}" tofile="${basedir}/target/${project.build.finalName}"/>
                              </tasks>
                          </configuration>
                      </execution>
